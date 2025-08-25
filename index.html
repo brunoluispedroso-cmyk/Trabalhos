@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HealthBites</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Links no topo do site -->
+<div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s3">
+            <a href="#" class="w3-button w3-block w3-black">HOME</a>
+        </div>
+        <div class="w3-col s3">
+            <a href="#about" class="w3-button w3-block w3-black">SOBRE</a>
+        </div>
+        <div class="w3-col s3">
+            <a href="#menu" class="w3-button w3-block w3-black">CARDAPIO</a>
+        </div>
+        <div class="w3-col s3">
+            <a href="#where" class="w3-button w3-block w3-black">ENDEREÇO</a>
+        </div>
+    </div>
+</div>
+
+<!-- Cabeçalho -->
+<header class="bgimg w3-display-container" id="home">
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+        <span class="w3-tag">Horário de funcionamento das 7:30 até as 20:00</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+        <span class="w3-text-black" style="font-size:90px">Health-Bites<br>Lanchonete-Fitness</span>
+    </div>
+    <div class="w3-display-bottomright w3-center w3-padding-large">
+        <span class="w3-text-white">Rua Barão do Triunfo 238  Porto Alegre, RS</span>
+    </div>
+</header>
+
+<!-- Container das informacoes da lanchonete -->
+<div class="w3-container" id="about">
+    <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Sobre a HealthBites</span></h5>
+        <p>Fundada em 2024, nossa lanchonete tem o compromisso firme de oferecer alimentos de qualidade e saudáveis. Acreditamos que é possível desfrutar de refeições que não apenas nutrem o corpo, mas também são incrivelmente saborosas..</p>
+        <p>Nosso cardápio é cuidadosamente elaborado para fornecer opções que são tanto nutritivas quanto deliciosas. Cada item é pensado levando em consideração os macronutrientes essenciais, adaptados para atender às necessidades de diferentes atividades físicas.</p>
+        <p>Em um ambiente acolhedor e moderno, servimos lanches que são verdadeiros aliados para sua saúde e bem-estar. Queremos mostrar que escolher alimentos saudáveis não significa abrir mão do prazer gastronômico. Na nossa lanchonete, você encontrará opções que satisfazem não apenas seu paladar, mas também seus objetivos de vida ativa.</p>
+        <p>Venha descobrir como é possível alimentar-se de forma consciente e deliciosa conosco. Sinta-se bem, sinta-se em casa na nossa Lanchonete Saudável e Saborosa.</p>
+        <div class="w3-panel w3-leftbar w3-light-grey">
+            <p><i>""Na nossa cozinha, privilegiamos produtos frescos da mais alta qualidade, com opções especialmente pensadas para vegetarianos e veganos."</i></p>
+            <p>Chef Gabriel Rambas.</p>
+        </div>
+        <img src="assets/cozinheiro/Cozinheiro.png" style="width:100%;max-width:650px" class="w3-margin-top">
+        <p><strong>Horário de funcionamento</strong> Todos os dias das 7:30 até as 20:00</p>
+        <p><strong>Endereço</strong> Rua Barão do Triunfo 238  Porto Alegre, RS</p>
+    </div>
+</div>
+
+<!-- Menu Cardapio Container -->
+<div class="w3-container" id="menu">
+    <div class="w3-content" style="max-width:700px">
+
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Cardapio</span></h5>
+        <img src="assets/cardapio/OIG4.5fgVrD.jfif" style="width:100%;max-width:1000px;margin-top:32px;">
+        <div class="w3-row w3-center w3-card w3-padding">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'comida');" id="myLink">
+                <div class="w3-col s6 tablink">Comidas</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'bebidas');">
+                <div class="w3-col s6 tablink">Bebidas</div>
+            </a>
+        </div>
+
+        <div id="comida" class="w3-container menu w3-padding-48 w3-card">
+            <h5>Sanduíche Integral de Frango com Abacate Preço: R$ 25,00</h5>
+            <p class="w3-text-grey">Sanduíche integral com peito de frango grelhado, fatias de abacate, alface e tomate.</p><br>
+
+            <h5>Tigela de Aveia com Frutas Preço: R$ 15,00</h5>
+            <p class="w3-text-grey">Aveia cozida em leite de amêndoas, coberta com morangos frescos, mirtilos, e amêndoas fatiadas.</p><br>
+
+            <h5>Omelete de Claras com Vegetais Preço: R$ 18,00</h5>
+            <p class="w3-text-grey">Omelete preparada com claras de ovos, espinafre fresco, tomate, cogumelos e queijo cottage.</p><br>
+
+            <h5>Panquecas de Banana e Aveia Preço: R$ 20,00</h5>
+            <p class="w3-text-grey">Panquecas feitas com banana amassada, aveia, ovos e canela, acompanhadas de frutas frescas e mel.</p><br>
+
+            <h5>Muffins de Aveia e Maçã Preço: R$ 10,00 (por unidade)</h5>
+            <p class="w3-text-grey">Muffins feitos com farinha de aveia, maçã ralada, nozes picadas e um toque de mel.</p>
+        </div>
+
+        <div id="bebidas" class="w3-container menu w3-padding-48 w3-card">
+            <h5>Smoothie de Proteína Preço: R$ 12,00</h5>
+            <p class="w3-text-grey">Smoothie com proteína em pó, banana, espinafre, leite de amêndoas e manteiga de amendoim.</p><br>
+
+            <h5>Iogurte Grego com Granola e Frutas Preço: R$ 14,00</h5>
+            <p class="w3-text-grey">Iogurte grego natural, granola caseira (com aveia, nozes e sementes), e frutas da estação.</p><br>
+
+            <h5>Água de Coco Natural Preço: R$ 8,00</h5>
+            <p class="w3-text-grey">Água de coco fresca servida na própria fruta.</p><br>
+
+            <h5>Iced Matcha Latte Preço: R$ 14,00</h5>
+            <p class="w3-text-grey">Latte gelado preparado com matcha, leite de coco e mel.</p><br>
+
+            <h5>Água com Limão e Hortelã Preço: R$ 6,00</h5>
+            <p class="w3-text-grey">Água fresca com limão e folhas de hortelã.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Container da Reserva -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+    <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Nos Encontre no Endereço.</span></h5>
+       <img src="assets/frente-loja/frente.png" class="w3-image" style="width:100%">
+        <p><span class="w3-tag">Rua Barão do Triunfo 238 Porto Alegre, RS
+        <p><strong>Faça a sua Reserva</strong> Nos envie uma mensagem informando o seu nome e o número de pessoas, que faremos a reserva para você:</p>
+        <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Nome"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Número de pessoas" ></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Dia e hora" value="2024-06-16T20:00"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Lanche e quantidades do mesmo." ></p>
+            <p><button class="w3-button w3-black" type="submit">Enviar</button></p>
+        </form>
+    </div>
+</div>
+
+<!-- Final da pag -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <p>Powered by Bruno Pedroso</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
